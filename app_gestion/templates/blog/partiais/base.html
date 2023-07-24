@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'gestion/css/bootstrap.css' %}">
+</head>
+<body>
+<<-- debut header -->>
+{% include 'blog/partiais/header.html' %}
+
+
+<h1>{{ name }}</h1>
+
+
+{% block content %}
+{% endblock %}
+<script src="{% static 'gestion/js/bootstrap.js' %}>"</script>
+</body>
+</html>
